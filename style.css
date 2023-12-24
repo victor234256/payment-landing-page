@@ -1,0 +1,271 @@
+/*
+  CSS reset
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    max-width: 1440px;
+    max-height: 1170px;
+    background-color: #F5F8FA;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+  nav{
+    margin-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-start: 30px;
+    border-block-end-style: solid;
+    border-block-end-width: 2px;
+    border-block-end: #646E7A;
+  }
+  nav ul{
+    list-style-type: none;
+    text-align: right;
+    
+  }
+  nav ul li{
+    display: inline;
+    text-align: right;
+    padding-inline: 20px;
+  }
+  nav img{
+    width: 200px;
+    height: 39px;
+  }
+  .container{
+    margin-block-start: 70px;
+    margin-block-end: 180px;
+    margin-inline-start: 262px;
+    margin-inline-end: 286px;
+  }
+  .row{
+    display: grid;
+    grid-template-columns: 1fr 312px;
+  }
+  .col-1{
+    padding-inline: 44px;
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05), 0px 15px 35px 0px rgba(43, 64, 78, 0.10);
+  }
+  .col-2{
+    padding-inline: 44px;
+    border-radius: 0px 6px 6px 0px;
+    background: #1179BF;
+   
+  }
+.col-2 > p{
+    color: #FFF;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.008px;
+}
+form label{
+    display: block;
+    color: #1D2C3C;
+    font-size: 14px;
+    font-family: Lato;
+    font-weight: 400;
+    word-wrap: break-word
+}
+.form1{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 8px;
+    margin-block-end: 24px;
+    grid-template-areas: 
+    "one two"
+    "three three"
+    "three three";
+}
+input[type="text"]:nth-child(1){
+    grid-area: one;
+}
+input[type="text"]:nth-child(2){
+    grid-area: two;
+}
+input[type="text"]:nth-child(3){
+    grid-area: three;
+    width: 100%;
+}
+.checkout{
+    color: #1D2C3C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-block-start: 41px;
+    margin-block-end: 24px;
+
+}
+hr{
+    border-top: 1px solid #F5F7FA;
+    margin-block-end: 30px;
+    
+}
+.info-div{
+    margin-block-end: 12px; 
+}
+.info-number{
+    display: inline;
+    border: 2px solid #548BC5;
+    color: #548BC5;
+    border-radius: 60px;
+    padding: 3px 6px;
+    font-size: 12px;
+    margin-block-end: 7px;
+}
+span{
+color: #1D2C3C;
+ font-size: 18px;
+ font-family: Lato;
+ font-weight: 700;
+ word-wrap: break-word
+}
+.form-input{
+    background-color: #EDEFF2;
+    border-radius: 4px;
+    border-color: transparent;
+}
+form::placeholder{
+    color: #646E7A;
+    font-size: 10px;
+    font-family: Lato;
+    font-weight: 400;
+    word-wrap: break-word;
+    padding-inline-start: 5px;
+}
+.span-input{
+    width: 100%;
+    position: relative;
+}
+.nest-span{
+    font-size: 12px;
+    position: absolute;
+    right: 621px;
+    top: 552px;
+    color: #646E7A;
+    font-weight: 100;
+}
+.help{
+    font-size: 10px!important;
+    margin-block-start: 10px;
+}
+.help2{
+    font-size: 10px;
+    border-radius: 60px;
+    padding: 2px 6px;
+    margin-block-end: 7px;
+
+}
+.help > span{
+    font-size: 10px!important; 
+}
+.btn{
+    margin-block-start: 30px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: #038E7D;
+    color: white;
+    font-size: 18px;
+    font-family: Lato;
+    font-weight: 700;
+    border: transparent;  
+}
+.footer{
+    text-align: center;
+}
+.footer img{
+    text-align: right;
+    margin-block-start: 20px;
+    margin-block-end: 30px;
+    margin-inline-start: 125px;
+}
+
+  /*Freelancer Area */
+  .freelancer{
+    color: white;
+    font-size: 20px;
+    font-family: Lato;
+    font-weight: 700;
+    margin-block-start: 42px;
+
+  }
+  .renew-text{
+    color: white;
+    font-size: 16px;
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 10px;
+  }
+  .col-2 p img{
+    display: inline;
+    margin-inline-end: 3px;
+    line-height: 200px;
+  }
+  .display-inline{
+    margin-block-start: 10px;
+  }
+  .client-request{
+    margin-block: 25px;
+    color: white;
+  }
+  .ftp-text{
+    font-size: 18px;
+    font-family: Lato;
+    font-style: italic;
+    font-weight: 400;
+  }
+  .display-inline img{
+    border-radius: 20px;
+  }
+  .copywrite{
+    text-align: center;
+    margin-block-start: -150px;
+    color: #636B6F;
+  }
