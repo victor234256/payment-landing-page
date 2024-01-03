@@ -203,10 +203,11 @@ form::placeholder{
     border-radius: 3px;
     background-color: #038E7D;
     color: white;
-    font-size: 18px;
+    font-size: 15px;
     font-family: Lato;
     font-weight: 700;
-    border: transparent;  
+    border: transparent;
+    padding-block: 5px;  
 }
 .footer{
     text-align: center;
